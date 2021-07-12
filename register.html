@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>McLibrary - ARMTI | Home Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel='stylesheet' type='text/css' media='screen' href='css/color.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/app.css'>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"> -->
+
+</head>
+<body>
+
+    <div class="h-screen fixed top-0 w-full">
+        <div class="h-full flex bg-white overflow-hidden mx-auto">
+            <div class="hidden lg:block lg:w-1/2 bg-cover h-full" style="background-image:url('images/banners/auth.png')">
+                <div class="relative h-full">
+                    <div class="absolute bottom-40 left-10 w-full border-l-4 border-primary-6">
+                        <h1 class="text-3xl pl-8 font-semibold leading-loose tracking-wide sm:text-4xl lg:text-6xl">
+                            <span class="block text-white py-1">One Platform,</span> 
+                            <span class="block text-white py-1">Millions of</span> 
+                            <span class="block text-white py-1">Resources</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full p-8 pt-4 lg:w-1/2 h-full overflow-y-auto">
+                <div class="my-2">
+                    <a href="index.html" class="inline-flex items-center">
+                        <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.71 5.70998C10.1 6.09998 10.1 6.72998 9.71 7.11998L5.83 11H21C21.55 11 22 11.45 22 12C22 12.55 21.55 13 21 13H5.82L9.7 16.88C10.09 17.27 10.09 17.9 9.7 18.29C9.31 18.68 8.68 18.68 8.29 18.29L2.7 12.7C2.31 12.31 2.31 11.68 2.7 11.29L8.3 5.70998C8.68 5.31998 9.32 5.31998 9.71 5.70998Z" fill="#1F290A"/></svg> -->
+                        <span class="ml-2 underline font-medium text-sm">Go Home</span>
+                    </a> 
+                </div>  
+
+                <div>
+                    <div class="flex flex-col items-center">
+                        <img src="images/logo.png" />
+
+                        <div class="my-4">
+                            <h2 class="text-2xl font-semibold tracking-wide">Patron's Registration</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-2 sm:px-6 md:px-8">
+                    <form action="#">
+                        <div class="w-full py-3 px-2">
+                            <label class="pb-2 text-gray-500">Full Name</label>
+                            <input placeholder="John Doe" required type="text" name="full_name" class="block border w-full rounded py-2 px-3 border-primary-2 focus:outline-none" />
+                        </div>
+
+                        <div class="w-full py-3 px-2">
+                            <label class="pb-2 text-gray-500">Email Address</label>
+                            <input placeholder="john@doe.com" required type="email" name="email_address" class="block border w-full rounded py-2 px-3 border-primary-2 focus:outline-none" />
+                        </div>
+
+                        <div class="w-full py-3 px-2">
+                            <label class="pb-2 text-gray-500">User Phone Number</label>
+                            <input placeholder="Enter your phone number" required type="text" name="user_phone" class="block border w-full rounded py-2 px-3 border-primary-2 focus:outline-none" />
+                        </div>
+
+                        <div class="w-full py-3 px-2">
+                            <label class="pb-2 text-gray-500">Guarantor's Phone Number</label>
+                            <input placeholder="Enter guarantor's phone number" required type="email" name="email_address" class="block border w-full rounded py-2 px-3 border-primary-2 focus:outline-none" />
+                        </div>
+
+                        <div class="w-full py-3 px-2">
+                            <label class="pb-2 text-gray-500">Gender</label>
+                            <select required id="gender" name="gender" class="block border w-full rounded py-2 px-3 border-primary-2 focus:outline-none">                               
+                                <option>Male</option>
+                                <option selected>Female</option>
+                            </select>
+                        </div>
+
+                        <div class="w-full py-3 px-2">
+                            <label class="pb-2 text-gray-500">Home Address</label>
+                            <input placeholder="Enter home address" required type="text" name="user_phone" class="block border w-full rounded py-2 px-3 border-primary-2 focus:outline-none" />
+                        </div>
+
+                        <div class="w-full py-3 px-2">
+                            <label class="pb-2 text-gray-500">Office Address</label>
+                            <input placeholder="Enter office address" required type="email" name="email_address" class="block border w-full rounded py-2 px-3 border-primary-2 focus:outline-none" />
+                        </div>
+
+                        <div class="flex items-center py-3 px-3">
+
+                            <label class="flex justify-start items-center">
+                                <div class="bg-white border-2 rounded border-primary-6 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus:outline-none">
+                                    <input type="checkbox" class="opacity-0 absolute">
+                                    <svg class="fill-current hidden bg-primary-6 w-4 h-4 text-white pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                                </div>
+                                <p class="text-sm">
+                                    I agree to the 
+                                    <a href="#" class="text-primary-6 underline font-medium">Terms of use </a> and
+                                    <a href="#" class="text-primary-6 underline font-medium">Privacy Policy </a>
+                                    of the library
+                                </p>
+                            </label>
+
+                        </div>
+
+                        <div class="w-full px-2 py-4 pt-6">
+                            <button type="submit" class="w-full bg-indigo-500 border border-transparent rounded-sm py-2 px-4 flex items-center justify-center text-base font-medium text-tertiary-10 bg-primary-6 focus:outline-none">
+                                Send Message
+                            </button>
+                        </div>
+
+                        <div class="flex justify-center py-2">
+                            <p>
+                                Already have an account?
+                                <a href="#" class="text-primary-6 underline font-medium">Log In </a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+          </div>
+    </div>
+
+</body>
+</html>
